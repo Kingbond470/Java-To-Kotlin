@@ -66,3 +66,23 @@ null - In an effort to rid the world of NullPointerException, variable types in 
        name=null
        
        
+## Verify Null Value
+
+### Java
+
+        if(name!=null){
+            int length=name.length();
+        }
+        
+### Kotlin
+
+          name?.let{
+                  val length=name.length
+                  print(length)
+              }
+              
+         // simplified one
+         val length=name?.length
+
+
+
