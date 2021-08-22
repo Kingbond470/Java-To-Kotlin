@@ -4,37 +4,65 @@ Kotlin is a cross-platform, statically typed, general-purpose programming langua
 
 ## Print to Console
 
-Java 
+### Java 
 
-    // cursor will point to at the end of line
-    System.out.print("Hello World");
+The cursor will point to at the end of line
 
-    // cursor will point to at the start of new line
+     System.out.print("Hello World");
+
+The cursor will point to at the start of new line
+
     System.out.println("Hello World");
     
-Kotlin
+### Kotlin
 
-    // cursor will point to at the end of line
+The cursor will point to at the end of line
+
         print("Hello World")
     
-    // cursor will point to at the start of new line
+The cursor will point to at the start of new line
+
         println("Hello World")
+        
+        
 
 ## Constant and Variable
 
-Java
+## Java
 
-    // variable - String is immutable in Java because of the security, synchronization and concurrency, caching, and class loading.
+Variable - String is immutable in Java because of the security, synchronization and concurrency, caching, and class loading.
+
     String name="Kingbond";
     
-    // constant - String final is to destroy the immutability and to not allow others to extend it.
+Constant - String final is to destroy the immutability and to not allow others to extend it.
+
     final String name="Kingbond";
     
     
-Kotlin
+## Kotlin
 
-       // variable - var makes a variable mutable
+Variable - var makes a variable mutable
+
        var name="Kingbond"
        
-       // constant - val makes a variable immutable
+Constant - val makes a variable immutable
+
        val name="Kingbond"
+       
+## Assigning Null Value
+
+### Java
+
+null - a literal that represents a null reference, one that does not refer to any object. null is the default value of reference-type variables
+
+       String name;
+       name=null;
+        
+### Kotlin
+
+null - In an effort to rid the world of NullPointerException, variable types in Kotlin don't allow the assignment of null.If you need a variable that can be null, declare it nullable by adding ? at the end of its type.
+
+       var name: String?
+       name=null
+       
+       
